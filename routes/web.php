@@ -3,22 +3,22 @@
 use Illuminate\Support\Facades\Route;
 
 
-Route::get('/', function () {
-    echo "Teste view";
+Route::get('/home', function () {
+    return view('home');
 });
 
 
 Route::get('/sobre', function () {
-       echo "Sobre";
+       return view('sobre');
 
 });
 
 Route::get('/contato', function () {
-        echo "Contato";
+        return view('contato');
 
 });
 
 Route::get('/portifolio', function () {
-    echo "Portifolio";
+    return view('portifolio');
 
 });
